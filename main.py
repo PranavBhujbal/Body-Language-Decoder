@@ -134,12 +134,9 @@ elif app_mode =='Run on Video':
 
     if not video_file_buffer:
         if use_webcam:
-            FRAME_WINDOW = st.image([])
+            
             cap = cv2.VideoCapture(0)
-            frame = cap.read()
-            
-            FRAME_WINDOW.image(frame)
-            
+       
         else:
             cap = cv2.VideoCapture(DEMO_VIDEO)
             tfflie.name = DEMO_VIDEO
