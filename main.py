@@ -136,9 +136,9 @@ elif app_mode =='Run on Video':
         if use_webcam:
             FRAME_WINDOW = st.image([])
             cap = cv2.VideoCapture(0)
-             _, frame = camera.read()
-             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-             FRAME_WINDOW.image(frame)
+            frame = camera.read()
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            FRAME_WINDOW.image(frame)
             
         else:
             cap = cv2.VideoCapture(DEMO_VIDEO)
